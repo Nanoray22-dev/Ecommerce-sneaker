@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  box-sizing: border-box;
+}
+
+.slick-prev,
+.slick-next {
+  @apply hidden !important;
+}
+
+.css-i9fmh8-MuiBackdrop-root-MuiModal-backdrop {
+  @apply bg-black bg-opacity-75 !important;
+}
+
+ul.slick-dots {
+  @apply static md:grid md:gap-[31.5px] md:grid-cols-4 mt-6 text-left w-full max-w-[450px] hidden mx-auto !important;
+}
+
+ul.slick-dots li {
+  @apply w-full max-w-[89px] h-auto m-0 !important;
+}
+
+li.slick-active {
+  @apply after:bg-white after:bg-opacity-60 after:w-full after:h-full after:absolute after:z-20 after:top-0 
+  after:rounded-xl after:border-2 after:border-oranges;
+}
